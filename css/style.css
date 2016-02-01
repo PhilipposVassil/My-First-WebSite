@@ -1,0 +1,140 @@
+body {
+  background: #333
+}
+
+li {
+  display: inline;
+}
+
+le {
+  display: inline;
+  float: left;
+  padding: 30px 140px;
+  font-size: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+}
+
+le a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.line {
+  color: gray;
+  margin-right: -90px;
+  /* negative value of footer height */
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+}
+
+.btn {
+  //margin-left: 40px;
+}
+
+.bt {
+  margin-left: 45px;
+}
+
+
+/*----- Menu Outline -----*/
+
+.menu-wrap {
+  width: auto;
+  background: #333;
+}
+
+.menu {
+  width: auto;
+  margin: auto;
+}
+
+.menu li:hover > a,
+.menu .current-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu .arrow {
+  font-size: 11px;
+  line-height: 0%;
+}
+
+
+/*----- Top Level -----*/
+
+.menu > ul > li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+}
+
+.menu > ul > li > a {
+  padding: 40px 15px;
+  padding-bottom: 10px;
+}
+
+.menu > ul > li:hover > a,
+.menu > ul > .current-item > a {
+  //background: #111;
+}
+
+
+/*----- Bottom Level -----*/
+
+.menu li:hover .sub-menu {
+  z-index: 1;
+  opacity: 1;
+}
+
+.sub-menu {
+  width: 105px;
+  padding: 5px 0px;
+  position: absolute;
+  left: 45px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity linear 0.15s;
+  background: #111;
+}
+
+.sub-menu li {
+  display: block;
+  font-size: 16px;
+}
+
+.sub-menu li a {
+  padding: 10px 10px;
+  display: block;
+}
+
+.sub-menu li a:hover,
+.sub-menu .current-item a {
+  //background: #111;
+}
+
+#blue{
+   background: #007fff;
+}
