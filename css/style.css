@@ -1,5 +1,6 @@
 body {
-  background: #333
+  background: #333;
+  margin:0;
 }
 
 li {
@@ -9,7 +10,7 @@ li {
 le {
   display: inline;
   float: left;
-  padding: 30px 140px;
+  padding: 30px 80px;
   font-size: 30px;
 }
 
@@ -28,20 +29,97 @@ le a {
   color: white;
   text-align: center;
 }
-
+/*
 li a:hover {
   background-color: #111;
+}*/
+
+le .special-color {
+  color: #33ccff;
+}
+
+la .sizeN{
+  font-size: 20px;
+}
+
+la .sizeB{
+  font-size: 35px;
+}
+
+la .sizeS{
+  font-size: 15px;
+}
+
+.test{
+  display: table;
+  margin: 0 auto;
+}
+
+.text{
+  margin: 20 auto;
+  //margin-left: -275px;
+  background-color: #ffffff;
+  float: left;
+  height:auto;
+  //width:50%;
+  width: inherit;
+  padding:8px;
+  resize: none;
+  border:none;
 }
 
 .line {
   color: gray;
   margin-right: -90px;
+  margin-top: 33.5;
   /* negative value of footer height */
   -ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   /* Chrome, Safari, Opera */
   transform: rotate(90deg);
+}
+
+.divblue{
+  background: #0099ff;
+  text-align: center;
+  color: white;
+  margin-left: 710px;
+  width: 250px;
+  height: 300px;
+}
+.divimg{
+  float: left;
+}
+
+.round-button {
+  margin-top: 30px;
+  margin-left: 60px;
+	width:20%;
+}
+.round-button-circle {
+  background: #ffffff;
+  width: 230%;
+  height: 0px;
+  padding-bottom: 70%;
+  border-radius: 15%;
+  overflow:hidden;
+}
+
+.round-button a {
+  display:block;
+	float:left;
+	width:100%;
+	padding-top:15%;
+	line-height:1em;
+	margin-top:-0.5em;
+  margin-left: 0px;
+
+	text-align:center;
+	color: black;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
 }
 
 .clearfix:after {
@@ -54,14 +132,17 @@ li a:hover {
 }
 
 .bt {
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 
 /*----- Menu Outline -----*/
 
 .menu-wrap {
-  width: auto;
+  margin-right: auto; margin-left: auto;
+  height: 80px;
+  width: 1000px;
+  //width: auto;
   background: #333;
 }
 
@@ -92,7 +173,7 @@ li a:hover {
 }
 
 .menu > ul > li > a {
-  padding: 40px 15px;
+  padding: 50px 15px;
   padding-bottom: 10px;
 }
 
@@ -113,11 +194,11 @@ li a:hover {
   width: 105px;
   padding: 5px 0px;
   position: absolute;
-  left: 45px;
+  left: 55px;
   z-index: -1;
   opacity: 0;
   transition: opacity linear 0.15s;
-  background: #111;
+  background: #333;
 }
 
 .sub-menu li {
@@ -136,5 +217,5 @@ li a:hover {
 }
 
 #blue{
-   background: #007fff;
+   background: #0099ff;
 }
