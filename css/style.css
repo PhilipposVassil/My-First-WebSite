@@ -19,6 +19,10 @@ ul {
   padding: 0;
 }
 
+dd{
+  font-size: 19px;
+}
+
 li a {
   display: inline-block;
   color: white;
@@ -50,22 +54,70 @@ la .sizeS{
   font-size: 15px;
 }
 
-.test{
+b .txt{
+  font-size: 20px;
+}
+
+.frame{
   display: table;
   margin: 0 auto;
 }
 
+.midframe{
+  margin: 0 auto;
+  height: 350px;
+}
+
 .text{
   margin: 20 auto;
-  //margin-left: -275px;
   background-color: #ffffff;
   float: left;
-  height:auto;
-  //width:50%;
+  height: auto;
   width: inherit;
-  padding:8px;
+  padding: 8px;
   resize: none;
   border:none;
+}
+
+.leftframe{
+  background-color: #f2f2f2;
+  margin-left: 14px;
+  float: left;
+  width: 290px;
+  height: auto;
+  padding: 8px;
+}
+.centerframe{
+  background-color: #f2f2f2;
+  margin-left: 14px;
+  float: left;
+  width: 290px;
+  height: 340px;
+  padding: 8px;
+}
+.rightframe{
+  background-color: #f2f2f2;
+  margin-left: 14px;
+  float: left;
+  width: 290px;
+  height: 340px;
+  padding: 8px;
+}
+
+.down{
+  background-color: #f2f2f2;
+  float: left;
+  width: 625px;
+  height: 180px;
+  padding: 8px;
+}
+
+.address{
+  background-color: #f2f2f2;
+  margin-left: 654px;
+  width: 290px;
+  height: 180px;
+  padding: 8px;
 }
 
 .line {
@@ -86,7 +138,7 @@ la .sizeS{
   color: white;
   margin-left: 710px;
   width: 250px;
-  height: 300px;
+  height: 350px;
 }
 .divimg{
   float: left;
@@ -117,6 +169,35 @@ la .sizeS{
 
 	text-align:center;
 	color: black;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.round-button1 {
+  margin-top: 30px;
+  margin-left: 15px;
+	width:20%;
+}
+.round-button-circle1 {
+  background: #111;
+  width: 230%;
+  height: 0px;
+  padding-bottom: 70%;
+  overflow:hidden;
+}
+
+.round-button1 a {
+  display:block;
+	float:left;
+	width:100%;
+	padding-top:15%;
+	line-height:1em;
+	margin-top:-0.5em;
+  margin-left: 0px;
+
+	text-align:center;
+	color: white;
     font-size:1.2em;
     font-weight:bold;
     text-decoration:none;
