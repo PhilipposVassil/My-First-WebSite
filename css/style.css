@@ -3,6 +3,12 @@ body {
   margin:0;
 }
 
+lu{
+  display: inline;
+  float: left;
+  margin-left: 55px;
+}
+
 le {
   display: inline;
   float: left;
@@ -20,12 +26,16 @@ li a {
   color: white;
 }
 
+lu a {
+  display: inline-block;
+  color: white;
+}
+
 le a {
   display: inline-block;
   color: white;
   text-align: center;
 }
-
 /*
 li a:hover {
   background-color: #111;
@@ -101,6 +111,11 @@ b .title{
   padding-bottom: 10px;
 }
 
+.menu > ul > lu > a {
+  padding: 50px 15px;
+  padding-bottom: 10px;
+}
+
 .menu > ul > li:hover > a,
 .menu > ul > .current-item > a {
   //background: #111;
@@ -144,6 +159,7 @@ b .title{
   border-color: gray;
   margin-right: -90px;
   margin-top: 33.5;
+  width: 80;
   /* negative value of footer height */
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -175,6 +191,11 @@ b .title{
 
 .divimg{
   float: left;
+}
+
+.divimg img{
+  width:710px;
+  height:350px;
 }
 
 .divblue{
@@ -230,6 +251,16 @@ b .title{
   padding: 8px;
 }
 
+.divimg1{
+  float: left;
+}
+
+.divimg1 img{
+  width:288px;
+  height:200px;
+  padding-bottom: 10px;
+}
+
 .centerframe{
   background-color: #f2f2f2;
   margin-left: 14px;
@@ -237,6 +268,16 @@ b .title{
   width: 290px;
   height: 340px;
   padding: 8px;
+}
+
+.divimg2{
+  float: left;
+}
+
+.divimg2 img{
+  width:288px;
+  height:200px;
+  padding-bottom: 10px;
 }
 
 .rightframe{
@@ -273,6 +314,10 @@ b .title{
 .bottom{
   display: table;
   margin: 0 auto;
+}
+
+.lineb{
+  width: 75px;
 }
 
 .bottomleft{
@@ -360,7 +405,6 @@ and (max-device-width : 1024px)
   margin-left: 15px;
 	width:20%;
 }
-
 .round-button-circle1 {
   background: #111;
   width: 230%;
