@@ -3,22 +3,13 @@ body {
   margin:0;
 }
 
-lu{
-  display: inline;
-  float: left;
-  margin-left: 55px;
-}
-
-le {
-  display: inline;
-  float: left;
-  padding: 30px 80px;
-  font-size: 30px;
-}
-
 ul {
   margin: 0;
   padding: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 li a {
@@ -26,35 +17,47 @@ li a {
   color: white;
 }
 
-lu a {
-  display: inline-block;
-  color: white;
-}
-
-le a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-}
 /*
 li a:hover {
   background-color: #111;
 }*/
 
-le .special-color {
+div .logo{
+  display: inline-block;
+  float: left;
+  padding: 30px 80px;
+}
+
+div .name {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+div .special-color {
   color: #33ccff;
 }
 
-la .sizeN{
+li.tab{
+  display: inline;
+  float: left;
+  margin-left: 55px;
+}
+
+div .sizeN{
   font-size: 20px;
 }
 
-la .sizeB{
+div .sizeB{
   font-size: 35px;
 }
 
-la .sizeS{
+div .sizeS{
   font-size: 15px;
+}
+
+ul.disk{
+  list-style-type:disc;
 }
 
 li .col{
@@ -132,8 +135,8 @@ b .title{
 .sub-menu {
   width: 105px;
   padding: 5px 0px;
-  position: absolute;
-  left: 7px;
+  margin-left: 10px;
+  position: fixed;
   z-index: -1;
   opacity: 0;
   transition: opacity linear 0.15s;
@@ -146,7 +149,7 @@ b .title{
 }
 
 .sub-menu li a {
-  padding: 10px 10px;
+  padding: 0px 10px 10px 10px;
   display: block;
 }
 
@@ -242,26 +245,7 @@ b .title{
   height: 350px;
 }
 
-.leftframe{
-  background-color: #f2f2f2;
-  margin-left: 14px;
-  float: left;
-  width: 290px;
-  height: auto;
-  padding: 8px;
-}
-
-.divimg1{
-  float: left;
-}
-
-.divimg1 img{
-  width:288px;
-  height:200px;
-  padding-bottom: 10px;
-}
-
-.centerframe{
+.leftframe , .centerframe , .rightframe{
   background-color: #f2f2f2;
   margin-left: 14px;
   float: left;
@@ -270,23 +254,14 @@ b .title{
   padding: 8px;
 }
 
-.divimg2{
+.divimg1 , .divimg2{
   float: left;
 }
 
-.divimg2 img{
+.divimg1 img , .divimg2 img{
   width:288px;
   height:200px;
   padding-bottom: 10px;
-}
-
-.rightframe{
-  background-color: #f2f2f2;
-  margin-left: 14px;
-  float: left;
-  width: 290px;
-  height: 340px;
-  padding: 8px;
 }
 
 .list{
@@ -316,23 +291,7 @@ b .title{
   margin: 0 auto;
 }
 
-.lineb{
-  width: 75px;
-}
-
-.bottomleft{
-  color: #ffffff;
-  width: 200px;
-  float: left;
-}
-
-.bottomcenter{
-  color: #ffffff;
-  width: 200px;
-  float: left;
-}
-
-.bottomright{
+.bottomleft , .bottomcenter , .bottomright{
   color: #ffffff;
   width: 200px;
   float: left;
@@ -394,6 +353,7 @@ and (max-device-width : 1024px)
 }
 
 .lineb{
+  width: 75px;
   margin-left: 5px;
   margin-right: 0px;
   border-color: gray;
@@ -405,6 +365,7 @@ and (max-device-width : 1024px)
   margin-left: 15px;
 	width:20%;
 }
+
 .round-button-circle1 {
   background: #111;
   width: 230%;
@@ -427,6 +388,11 @@ and (max-device-width : 1024px)
     font-size:1.2em;
     font-weight:bold;
     text-decoration:none;
+}
+
+.footer{
+  text-align: center;
+  color: white;
 }
 
 #blue{
