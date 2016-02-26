@@ -1,217 +1,201 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My first website</title>
 		<link rel="stylesheet" href="css/style.css">
-		</head>
+		<!-- Include jQuery.mmenu .css files -->
+	      <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.1/css/jquery.mmenu.all.css" rel="stylesheet" />
+
+	      <!-- Include jQuery and the jQuery.mmenu .js files -->
+	      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.1/js/jquery.mmenu.all.min.js"></script>
+		  <!-- Fire the plugin onDocumentReady -->
+	      <script type="text/javascript">
+	         jQuery(document).ready(function( $ ) {
+	            $("#menu").mmenu({
+	               "extensions": [
+	                  "theme-dark"
+	               ],
+	               offCanvas	: {
+						position	: "left",
+						zposition	: "front"
+					}
+	            });
+	         });
+	      </script>
+	</head>
 <body>
 
-<div class="menu-wrap">
-  <nav class="menu">
-    <ul class="clearfix">
-      <div class="logo">
-				<a class="name"><span class="special-color">Wilson</span>Law</a>
-			</div>
-      <li>
-				<a id="blue" href="#home">Home</a>
-			</li>
-      <li>
-        <hr class="line">
-      </li>
-      <li class="tab">
-        <a href="#about">About Us <span class="arrow">&#9660;</span></a>
-        <ul class="sub-menu">
-          <li><a href="#philippos">Philippos</a></li>
-          <li><a href="#xristodoulos">Xristodoulos</a></li>
-        </ul>
-      </li>
-      <li>
-        <hr class="line">
-      </li>
-      <li class="tab">
-				<a href="#resources">Resources</a>
-			</li>
-      <li>
-        <hr class="line">
-      </li>
-      <li class="tab">
-				<a href="#practise">Practise</a>
-			</li>
-      <li>
-        <hr class="line">
-      </li>
-      <li class="tab">
-				<a href="#contact">Contacts</a>
-			</li>
-    </ul>
-  </nav>
+<div class="header">
+	<a href="#menu"></a>
+	PHILIPPOS VASSILIOU WEB DESIGN
 </div>
+<!-- The menu -->
+      <nav id="menu">
+         <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#">About us</a>
+               <ul>
+                  <li><a href="#">Philippos</a></li>
+                  <li><a href="#">Xristodoulos</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Practise</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+<div class="container">
+	<div class="menu-wrap">
+		<div class="logo">
+			<a href="" class="name"><span class="special-color">Wilson</span>Law</a>
+		</div>
+	  <nav class="menu">
+	    <ul class="clearfix">
+	      <li>
+					<a id="blue" href="#home">Home</a>
+				</li>
+	      <li class="tab">
+	        <a href="#about">About Us <span class="arrow">&#9660;</span></a>
+	        <ul class="sub-menu">
+	          <li><a href="#philippos">Philippos</a></li>
+	          <li><a href="#xristodoulos">Xristodoulos</a></li>
+	        </ul>
+	      </li>
+	      <li class="tab">
+					<a href="#resources">Resources</a>
+				</li>
+	      <li class="tab">
+					<a href="#practise">Practise</a>
+				</li>
+	      <li class="tab">
+					<a href="#contact">Contacts</a>
+				</li>
+	    </ul>
+	  </nav>
+	</div>
 
-<br>
-
-<div class="frame">
-	<div class="text">
-		<div class="divimg">
-			<img src="pics/law.jpg" alt="Law">
-	  </div>
-	 	<div class="divblue">
-			<div>
-				<br><br><br><br>
-				<span class="sizeN">
-					WE HOLD THE<br>
-				</span>
-				<span class="sizeB">
-					NATIONAL<br>
-				</span>
-				<span class="sizeS">
-					QUALITY STANDARD
-				</span>
-			</div>
-			<br>
-			<div class="round-button">
-				<div class="round-button-circle">
-					<a href="#Lern_More" class="round-button">Lern More</a>
+	<div class="main">
+		<div class="row">
+			<div class="divimg">
+				<img src="pics/law.jpg" alt="Law">
+		  </div>
+		 	<div class="divblue">
+				<div class="slider-text">
+					<span class="sizeN">WE HOLD THE</span>
+					<span class="sizeB">NATIONAL</span>
+					<span class="sizeS">QUALITY STANDARD</span>
 				</div>
-			</div>
-	 	</div>
+				<a href="#Learn_More" class="rnd-button">Learn More</a>
+		 	</div>
+		</div>
 
-		<br>
-
-		<div class="midframe">
-			<div class="leftframe">
-				<b><span class="txt">Solutions</span></b>
-				<br><br>
-				<div class="divimg1">
+		<div class="row">
+			<div class="mid-column">
+				<div class="mid-column-content">
+					<h2>Solutions</h2>
 					<img src="pics/banner1.jpg" alt="Law">
-				</div>
-				<br><br>
-				dfdffhfhgfhfhgfhfghfhgfghdgfdjhhjolkljjhghj
-				<div class="round-button1">
-					<div class="round-button-circle1">
-						<a href="#Read_More" class="round-button">Read More</a>
-					</div>
+					<p>dfdffhfhgfhfhgfhfghfhgfghdgfdjhhjolkljjhghj</p>
+					<a href="#Read_More" class="button">Read More</a>
 				</div>
 			</div>
-			<div class="centerframe">
-				<b><span class="txt">Who We Are</span></b>
-				<br><br>
-				<div class="divimg2">
+			<div class="mid-column">
+				<div class="mid-column-content">
+					<h2>Who We Are</h2>
 					<img src="pics/banner2.jpg" alt="Law">
-				</div>
-				<br><br>
-				dffdfhjgjhkjkhkhkhkjhjkhjkhjhkjhjkhkfgghgf
-				<div class="round-button1">
-					<div class="round-button-circle1">
-						<a href="#Read_More" class="round-button">Read More</a>
-					</div>
+					<p>dffdfhjgjhkjkhkhkhkjhjkhjkhjhkjhjkhkfgghgf</p>
+					<a href="#Read_More" class="button">Read More</a>
 				</div>
 			</div>
-			<div class="rightframe">
-				<b><span class="txt">Practice</span></b>
-				<br><br>
-				<ul style="list-style-image: url('pics/bullet.png');">
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-					<li class="list">test</li>
-				</ul>
+			<div class="mid-column">
+				<div class="mid-column-content">
+					<h2>Practice</h2>
+					<ul style="list-style-image: url('pics/bullet.png');">
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+						<li class="list">test</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<br><br>
-
-		<div class="downframe">
+		<div class="row">
 			<div class="down">
-				<b><span class="txt">Welcome Dear Visitor!</span></b>
-				<br><br>
+				<h2>Welcome Dear Visitor!</h2>
 				<a class="" href="#help">click here</a> <i>(General Help)</i>
-				<br><br>
-				<b>This is my first website I make so please be positive and dont judge me for my mistakes!</b>
-				<br><br>
-				fhdjfhjkdfnjfkdghnjkdfhgkjdhjkdfhgjkhdfjkhdfkjhdfjgkhfdjkghdfkghjfd
+				<h3>This is my first website I make so please be positive and dont judge me for my mistakes!</h3>
+				<p>fhdjfhjkdfnjfkdghnjkdfhgkjdhjkdfhgjkhdfjkhdfkjhdfjgkhfdjkghdfkghjfd
 				dfjhsdjfhgsdjfgbdhsjfgdhsjfgdsjfgdhjgfhdsjfghdsjgfhjdgfhjsdgfsdgds
-				dsfjsdfhjkfdshjkdhjkdshkdshjkdshjkdshfjkdhsfjkdhkjdhjkds
+				dsfjsdfhjkfdshjkdhjkdshkdshjkdshjkdshfjkdhsfjkdhkjdhjkds</p>
 			</div>
 
 			<div class="address">
-				<b><span class="txt">Address</span></b>
-				<br><br>
-				Πλ. Φιλικής Εταιρείας 19,<br>
-				Αθήνα 106 73
-				<br><br>
-				Telephone: +30 211 999 7590<br>
-				Fax: +30 211 999 7587
-				<br><br>
+				<h2>Address</h2>
+				<p>
+					Πλ. Φιλικής Εταιρείας 19,<br>
+					Αθήνα 106 73<br>
+					Telephone: +30 211 999 7590<br>
+					Fax: +30 211 999 7587<br>
+				</p>
 			 	<a href="mailto:kolonaki@istorm.gr">kolonaki@istorm.gr</a>
 			</div>
 		</div>
-	</div>
-</div>
 
-<br>
+	</div>
 
-<div class="bottom">
-	<div class="bottomleft">
-		<b><span class="title">Categories</span></b>
-		<br><br>
-		<ul class="disk">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-		</ul>
+	<div class="footer">
+		<div class="footer-col">
+			<h2>Categories</h2>
+			<ul class="disk">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+			</ul>
+		</div>
+		<div class="footer-col">
+			<h2>Meta</h2>
+			<ul class="disk">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+			</ul>
+		</div>
+		<div class="footer-col">
+			<h2>Archives</h2>
+			<ul class="disk">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+				<hr class="lineb">
+				<li class="list"><span class="col">test</span></li>
+			</ul>
+		</div>
+		<div class="footer-col">
+			<h2>Stay In Touch</h2>
+			<form>
+				<input type="text" class="first" name="Yourname" placeholder="Your Name">
+				<input type="text" class="last" name="Email" placeholder="Email">
+				<input type="text" class="message" name="message"placeholder="Message">
+				<div class="text-right"><a href="" >Submit</a></div>
+			</form>
+		</div>
 	</div>
-	<div class="bottomcenter">
-		<b><span class="title">Meta</span></b>
-		<br><br>
-		<ul class="disk">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-		</ul>
-	</div>
-	<div class="bottomright">
-		<b><span class="title">Achieves</span></b>
-		<br><br>
-		<ul class="disk">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-			<hr class="lineb">
-			<li class="list"><span class="col">test</span></li>
-		</ul>
-	</div>
-	<div class="bottombox">
-		<b>Stay In Touch</b>
-		<br><br>
-		<form>
-	  	<input type="text" class="first" name="Yourname" placeholder="Your Name"><br>
-	  	<input type="text" class="last" name="Email" placeholder="Email"><br>
-			<input type="text" class="message" name="message"placeholder="Message"><br>
-			<div class="submit">
-				Submit
-			</div>
-		</form>
-	</div>
-</div>
-
-<br>
-
-<footer class="footer">
-	This Website Is made By Philippos Vassiliou
-</footer>
 
 </body>
+
 </html>
